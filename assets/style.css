@@ -5,9 +5,27 @@ header, main {
     align-items: center;
 }
 
+.container {
+    margin: 40px 450px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
 button {
     width: 150px;
     padding: 10px;
     font-size: 20px;
     margin-left: 30px;
+    border-radius: 20px;
+    border-color: gray;
+
 }
+
+button:active {
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(56, 55, 55);
+}
+
+
+
