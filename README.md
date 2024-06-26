@@ -1,1 +1,2 @@
-# lampada_js
+# Projeto com Lampada em JavaScript puro
+
