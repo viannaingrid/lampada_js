@@ -2,12 +2,20 @@ const turOn = document.getElementById("turnOn");
 const turOff = document.getElementById("turnOff");
 const lamp = document.getElementById("lamp");
 
-function lampOn(){
-    lamp.src = "/assets/img/ligada.jpg";
+function isLampBroken () {
+    return lamp.src.indexOf ( 'quebrada' ) > -1
 }
 
-function lampOff(){
-    lamp.src = "/assets/img/desligada.jpg";
+function lampOn () {
+    if ( !isLampBroken () ) {
+        lamp.src = './assets/img/ligada.jpg';
+    }
+}
+
+function lampOff () {
+    if ( !isLampBroken () ) {
+        lamp.src = './assets/img/desligada.jpg';
+    }
 }
 
 function lampBroken(){
